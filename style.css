@@ -1,0 +1,170 @@
+/** Barra de navegacion */
+.navbar {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 0 0 20px 20px;
+    background: #6be8e1;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.2rem;
+    margin: 15px 15px;
+    /* background: green; */
+}
+.button-contacto {
+    margin-right: 50px;
+}
+
+/*****************************/
+
+/** slider principal*/
+.seccion-slider {
+    text-align: center;
+    /* background: teal; */
+}
+.carousel-item {
+    height: 500px;
+}
+.item-1{
+    background-image: url(fondos-de-pantalla/background-1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.item-2{
+    background-image: url(fondos-de-pantalla/background-2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.item-3{
+    background-image: url(fondos-de-pantalla/background-3.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.item-4{
+    background-image: url(fondos-de-pantalla/background-4.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+/******************************/
+
+/** Seccion nuestra empresa */
+/* experiencia */
+
+.seccion-clara{
+    color: black;
+    background: #fff;
+}
+
+
+
+
+/** Seccion valores */
+.experiencia {
+    padding: 40px;
+}
+
+.experiencia .columna {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+    background: #6be8e1;
+    border-radius: 15px;
+    color: white;
+}
+
+.experiencia-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.experiencia i {
+    /* background: #6be8e1; */
+    font-size: 2.5rem;
+    color: #12caee;
+    padding: 8px 19px;
+    border-radius: 15%;
+}
+
+.badge-contenedor {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badge {
+    margin: 5px;
+}
+/*********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************/
+
+@media screen  and (max-width: 400px){
+    .carousel-item {
+        height: 500px;
+    }
+    .container-contenido {
+        font-size: .6rem;
+    }
+}
+
+/* @media screen and (min-width: 1500px) {
+    .carousel-item {
+        height: 600px;
+    }
+} */
+.container-contenido {
+    position: relative;
+    top: 40%;
+    width: 70%;
+    margin: 0 auto;
+    color: white;
+}
+
+
+
+/** Estilos generales */
+.ancho-secciones {
+    width: 90%;
+    margin: 5% auto;
+    /* height: 600px; */
+}
+
+.seccion-clara{
+    color: black;
+    background: #fff;
+}
+
+/******************************/
