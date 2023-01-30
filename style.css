@@ -90,7 +90,9 @@
 
 .container-valores .items {
     /* background-color: rgb(10, 148, 223); */
-    /* border: 3px solid red; */
+    border: 3px solid rgb(22, 187, 232);
+    padding: 15px;
+    border-radius: 15px;
     margin: 15px;
     transition: all 0.2s ease-in;
 }
@@ -108,6 +110,7 @@
 .seccion-servicios {
     padding: 40px;
 }
+
 
 .container-miduv {
     display: flex;
@@ -136,28 +139,70 @@
     margin: 0 18px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
 /***********************************/
 
+
+/** Seccion colaboradores */
+.colaboradores{
+    padding: 40px;
+}
+.colaboradores img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+.contactos-contenedor{
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.overlay p{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom:25px;
+}
+.contacto-colaborador{
+    position: relative;
+}
+.contacto-colaborador:hover img{
+    opacity: 0.5;
+}
+.contacto-colaborador:hover .overlay{
+    opacity: 1;
+}
+
+.iconos-contacto i{
+    color: black;
+    font-size: 30px;
+    margin: 20px;
+}
+/***************************/
 
 /** Seccion carusel comentarios */
 .comentarios {
     padding: 40px 40px 80px 40px;
 }
-
 .titulo-comentarios {
     margin: 0;
 }
-
 .comentarios .carousel {
     max-width: 800px;
     margin: 0 auto;
 }
-
 .carousel-item {
     height: 500px;
 }
-
 .carousel-item .container {
     width: 100%;
     height: 100%;
@@ -166,42 +211,164 @@
     align-items: center;
     justify-content: center;
 }
-
 .comentario-imagen {
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     margin: 10px 10px 20px 10px;
 }
-
 .comentario-texto {
-    min-width: 70%;
+    min-width: 60%;
     width: 50%;
     font-size: 20px;
     text-align: center;
     font-family: 'Share Tech Mono', monospace;
 }
-
 .comentario-info {
     font-weight: bold;
     text-align: center;
 }
-
 .comentario-info p {
     margin-bottom: 0;
 }
-
 .comentario-footer .cliente {
     font-size: 1.2rem;
 }
-
 .comentario-footer .cargo {
     font-size: 0.9rem;
     color: #656060;
 }
-
 /*******************/
 
 
+/** Seccion Contacto*/
+.seccion-contacto {
+    height: 200px;
+    color: white;
+    /* background: #6be8e1; */
+}
+
+.contacto .container {
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .rectangulo {
+    margin-top: -4rem;
+    background-color: rgb(13, 110, 253);
+    border-radius: 10px;
+    /* border: 2px solid white; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.contacto .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.btn_center {
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.5em 2em;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    box-shadow: 0px 15px 18px -6px rgba(35, 22, 214, 0.65);
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    position: relative;
+}
+
+.contacto .btn_center i {
+    color: white;
+    font-size: 1.3rem;
+    padding: 15px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn_center:hover {
+    background-color: #051749;
+    box-shadow: 0px 22px 19px -8px rgba(16, 8, 119, 0.65);
+    transform: scale(1.02, 1.02);
+}
+
+.btn_center:active {
+    background-color: #051749;
+    box-shadow: 0px 12px 18px -4px rgba(7, 4, 51, 0.65);
+    transform: scale(0.95, 0.95);
+    transition: all 0.4s -0.125s;
+}
+/*******************/
+
+
+
+
+
+/** footer*/
+footer{
+    min-height: 400px;
+}
+.footer-logo{
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales a:hover{
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+}
+.iconos-redes-sociales a:hover i{
+    color: black;
+}
+/****************************/
+
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+   .button-contacto{
+    margin: 0 auto;
+    text-align: center;
+   }
+}
 
 @media screen and (max-width: 400px) {
     .carousel-item {
@@ -215,12 +382,12 @@
 
 @media screen and (min-width: 800px) {
     .comentario-imagen {
-        height: 120px;
-        width: 120px;
+        height: 100px;
+        width: 100px;
     }
 
     .comentario-texto {
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
@@ -249,6 +416,9 @@
     border-radius: 15px;
 
 }
-
+.centrado-texto{
+    width: 90%;
+    margin: 0 auto;
+}
 
 /******************************/
