@@ -1,10 +1,10 @@
 /** Barra de navegacion */
 .navbar {
-    width: 90%;
+    /* width: 90%; */
     margin: 0 auto;
     padding: 2rem;
     border-radius: 0 0 20px 20px;
-    background: #6be8e1;
+    /* background: #6be8e1; */
 }
 
 .navbar-collapse {
@@ -18,6 +18,7 @@
     margin: 15px 15px;
     /* background: green; */
 }
+
 .button-contacto {
     margin-right: 50px;
 }
@@ -28,123 +29,15 @@
 .seccion-slider {
     text-align: center;
     /* background: teal; */
+
 }
+
 .carousel-item {
     height: 500px;
-}
-.item-1{
-    background-image: url(fondos-de-pantalla/background-1.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-.item-2{
-    background-image: url(fondos-de-pantalla/background-2.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-.item-3{
-    background-image: url(fondos-de-pantalla/background-3.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-.item-4{
-    background-image: url(fondos-de-pantalla/background-4.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
-/******************************/
 
-/** Seccion nuestra empresa */
-/* experiencia */
 
-.seccion-clara{
-    color: black;
-    background: #fff;
 }
 
-
-
-
-/** Seccion valores */
-.experiencia {
-    padding: 40px;
-}
-
-.experiencia .columna {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    transition: all 0.2s ease-in;
-}
-
-.experiencia .columna:hover {
-    background: #6be8e1;
-    border-radius: 15px;
-    color: white;
-}
-
-.experiencia-titulo {
-    font-size: 25px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.experiencia i {
-    /* background: #6be8e1; */
-    font-size: 2.5rem;
-    color: #12caee;
-    padding: 8px 19px;
-    border-radius: 15%;
-}
-
-.badge-contenedor {
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.badge {
-    margin: 5px;
-}
-/*********************/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/****************************/
-
-@media screen  and (max-width: 400px){
-    .carousel-item {
-        height: 500px;
-    }
-    .container-contenido {
-        font-size: .6rem;
-    }
-}
-
-/* @media screen and (min-width: 1500px) {
-    .carousel-item {
-        height: 600px;
-    }
-} */
 .container-contenido {
     position: relative;
     top: 40%;
@@ -152,6 +45,185 @@
     margin: 0 auto;
     color: white;
 }
+
+.item-1 {
+    background-image: url(img-figma/camion-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.item-2 {
+    background-image: url(img-figma/camion-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.item-3 {
+    background-image: url(img-figma/camion-3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.item-4 {
+    background-image: url(img-figma/camion-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/******************************/
+
+/** Seccion nuestra empresa */
+/****************************/
+
+
+/** Seccion valores */
+.container-valores .row {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-valores .items {
+    /* background-color: rgb(10, 148, 223); */
+    /* border: 3px solid red; */
+    margin: 15px;
+    transition: all 0.2s ease-in;
+}
+
+.items:hover {
+    background: #6be8e1;
+    border-radius: 15px;
+    color: white;
+    transform: scale(1.1);
+}
+
+/**************************/
+
+/** Seccion servicios */
+.seccion-servicios {
+    padding: 40px;
+}
+
+.container-miduv {
+    display: flex;
+    height: 430px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 4px solid #ffffff;
+}
+
+.container-miduv img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    z-index: 2;
+}
+
+.container-miduv img:hover {
+    /* cursor: pointer; */
+    width: 250px;
+    opacity: 1;
+    border: 4px solid #ffffff;
+    border-radius: 10px;
+    filter: contrast(100%);
+    transform: scale(1.1);
+    margin: 0 18px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/***********************************/
+
+
+/** Seccion carusel comentarios */
+.comentarios {
+    padding: 40px 40px 80px 40px;
+}
+
+.titulo-comentarios {
+    margin: 0;
+}
+
+.comentarios .carousel {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.comentario-imagen {
+    height: 150px;
+    width: 150px;
+    margin: 10px 10px 20px 10px;
+}
+
+.comentario-texto {
+    min-width: 70%;
+    width: 50%;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+.comentario-info {
+    font-weight: bold;
+    text-align: center;
+}
+
+.comentario-info p {
+    margin-bottom: 0;
+}
+
+.comentario-footer .cliente {
+    font-size: 1.2rem;
+}
+
+.comentario-footer .cargo {
+    font-size: 0.9rem;
+    color: #656060;
+}
+
+/*******************/
+
+
+
+@media screen and (max-width: 400px) {
+    .carousel-item {
+        height: 500px;
+    }
+
+    .container-contenido {
+        font-size: .6rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .comentario-imagen {
+        height: 120px;
+        width: 120px;
+    }
+
+    .comentario-texto {
+        font-size: 18px;
+    }
+}
+
 
 
 
@@ -162,9 +234,21 @@
     /* height: 600px; */
 }
 
-.seccion-clara{
+.seccion-clara {
     color: black;
     background: #fff;
 }
+
+.seccion-oscura {
+    background: #a5d0ce;
+}
+.carousel {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 15px;
+
+}
+
 
 /******************************/
