@@ -1,4 +1,6 @@
-
+main{
+    background: rgba(0, 0, 0, 0.103);
+}
 
 /** Barra de navegacion */
 .navbar{
@@ -71,78 +73,95 @@
 
 
 /** Seccion servicios */
-.seccion-servicios {
+/* .seccion-servicios{
     background: rgba(217, 217, 98, 0.127);
-    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+}
+.section-efecto{
+    display: flex;
+    width: 100%;
+    height: 230px;
+}
+.section-efecto img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: contain;
+    opacity: .8;
+    transition: .5s ease-in;
+}
+.section-efecto img:hover{
+    width: 350px;
+    opacity: 1;
+    filter: contrast(120%);
+} */
+/***********************************/
+
+/**Servicios 2 */
+.slider-servicios {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    /* background: #000; */
+    background: rgba(217, 217, 98, 0.127);
+    width: 90%;
+    margin: 0 auto;
 }
 .container-miduv {
     display: flex;
-    height: 430px;
-    background: rgba(217, 217, 98, 0.127);
-
+    height: 400px;
 }
-
 .container-card {
     width: 0;
     flex-grow: 1;
-    border-radius: 15px;
+    object-fit: cover;
     opacity: .8;
     transition: .5s ease;
     margin: 0 8px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
 .container-card .card-1 {
-    background-image: url(img-figma/estacas1.png);
+    background-image: url(img-figma/carga1.jpeg);
     background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 15px;
-    height: 430px;
+    background-size: cover;
+    height: 400px;
 }
-
 .container-card .card-2 {
-    background-image: url(img-figma/furgon.png);
+    background-image: url(img-figma/carga1.jpeg);
     background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 430px;
-    border-radius: 15px;
-    text-align: center;
+    background-size: cover;
+    height: 400px;
 }
-
 .container-card .card-3 {
-    border-radius: 15px;
-    background-image: url(img-figma/tractor.webp);
-    background-size: contain;
+    background-image: url(img-figma/carga1.jpeg);
     background-position: center;
-    background-repeat: no-repeat;
-    height: 430px;
-    text-align: center;
+    background-size: cover;
+    height: 400px;
 }
-
 .container-card .card-4 {
-    border-radius: 15px;
-    background-image: url(img-figma/trans3.webp);
+    background-image: url(img-figma/carga1.jpeg);
     background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 430px;
-    text-align: center;
+    background-size: cover;
+    height: 400px;
+}
+.container-card .card-5 {
+    background-image: url(img-figma/carga1.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 400px;
 }
 .container-card:hover {
     height: 100%;
     width: 250px;
     opacity: 1;
-    filter: contrast(90%);
+    border: 4px solid #ffffff;
+    border-radius: 10px;
+    filter: contrast(100%);
     transform: scale(1.1);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.container-card h4 {
-    color: white;
+.card h4 {
     text-align: center;
+    color: white;
     padding-top: 50%;
-    font-size: 3rem;
 }
 /***********************************/
 
@@ -191,10 +210,15 @@
      /* background: rgb(17, 220, 213); */
      padding:20px;
 }
-.container-mapa{
+.container-mapa iframe{
+    background: rgba(153, 153, 149, 0.127);
+    border-radius: 15px;
+    padding: 15px;
     transition: all 0.2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
 }
-.container-mapa:hover{
+.container-mapa iframe:hover{
     transform: scale(1.2);
 }
 .container-mapa h6{
@@ -202,6 +226,7 @@
     height: 65px;
     padding: 70px 0;
 }
+
 /************************************/
 
 
@@ -209,6 +234,8 @@
 .colaboradores {
     padding: 40px 0;
     background: rgba(217, 217, 98, 0.127);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
     /* background-color: #656060; */
 }
 .colaboradores img {
@@ -273,13 +300,16 @@
 
 /** Seccion carusel comentarios */
 .testimonios {
-    padding: 40px 40px 80px 40px;
+    padding: 40px 40px 100px 40px;
 }
 .testimonios .carousel {
     max-width: 800px;
     margin: 0 auto;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background: rgba(217, 217, 98, 0.127);
+
     border-radius: 15px;
+    /* margin-bottom: 50px; */
 }
 .carousel-item {
     height: 550px;
@@ -353,6 +383,7 @@
 }
 /***************************/
 
+
 /**lista contactos */
 .container-iconos{
     background: rgb(255, 255, 255);
@@ -383,22 +414,11 @@
 }
 
 
-
-
 @media screen and (max-width: 767px) {
     .navbar-brand {
         display: none;
     }
 }
-
-/** servicios */
-@media screen and (max-width: 500px) {
-.seccion-servicios{
-    width: 100%;
-}
-}
-/****************/
-
 @media screen and (max-width: 800px) {
     .testimonio-imagen {
         height: 110px;
@@ -416,6 +436,8 @@
     .carousel-item {
         height: 550px;
     }
+
+ 
 }
 
 
@@ -427,27 +449,23 @@
     text-transform: capitalize;
     font-family: 'Bebas Neue', cursive;
 }
-
 .parrafos {
     width: 70%;
     margin: .8rem auto;
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
 }
-
 .dim-secciones {
     width: 80%;
     padding: 10px; 
-    margin: 40px auto;
+    margin: 0px auto 40px auto;
     border-radius: 15px;
     /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
 }
-
 .letra-titulos {
     font-family: 'Bebas Neue', cursive;
     font-size: 1.8rem;
 }
-
 .letra-textos {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
