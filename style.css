@@ -1,9 +1,13 @@
-
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
 main{
     background-image: url(img-figma/Hexagon.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
     /* background: rgba(0, 0, 0, 0.103); */
 }
 
@@ -105,7 +109,6 @@ main{
 /**Servicios 2 */
 .slider-servicios {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    /* background: #000; */
     background: rgba(217, 217, 98, 0.127);
     width: 90%;
     margin: 0 auto;
@@ -170,6 +173,81 @@ main{
 }
 /***********************************/
 
+/** Seccion galeria */
+.galeria{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background: rgba(217, 217, 98, 0.127);
+    font-family: sans-serif;
+    font-size: 3rem;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.grid-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #41c5e9;
+    border-radius: 4px;
+    transition:transform 0.3s ease-in-out;
+    /* border: solid 1px; */
+}
+.grid-item:hover{
+    filter: opacity(0.9);
+    transform: scale(1.04);
+}
+.grid-galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+}
+.grid-galeria img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width:600px){
+    .wide{
+        grid-column: span 2;
+    }
+    .tall{
+        grid-row: span 2;
+    }
+}
+
+.btn-verMas {
+    background-color: #eee;
+    border: none;
+    padding: .8rem;
+    font-size: 1rem;
+    width: 8em;
+    border-radius: .5rem;
+    color: rgb(23, 48, 208);
+    box-shadow: 0 0.4rem #d9dadf;
+    cursor: pointer;
+    margin: 40px;
+   }
+   
+  .btn-verMas:active {
+    color: white;
+    box-shadow: 0 0.2rem #dbd9df;
+    transform: translateY(0.2rem);
+   }
+   
+.btn-verMas:hover:not(:disabled) {
+    background: rgb(32, 217, 237);
+    color: white;
+    text-shadow: 0 0.1rem #0801e6;
+   }
+   
+.btn-verMas:disabled {
+    cursor: auto;
+    color: grey;
+   }
+/***********************************/
 
 /********** seccion pagos **********/
 .seccion-pagos{
@@ -212,6 +290,8 @@ main{
 
 /*****seccion ubicacion */
 .seccion-ubicacion{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background: rgba(217, 217, 98, 0.127);
      /* background: rgb(17, 220, 213); */
      padding:20px;
 }
