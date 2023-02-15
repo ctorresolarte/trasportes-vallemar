@@ -62,42 +62,42 @@ header {
 
 
 /** slider principal*/
+.carousel-caption {
+    background-color: #ffffff5a;
+    border-radius: 14px;
+    color: black;
+}
 .carousel-item img {
-    width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
 }
-
 .carousel-caption h5 {
     font-size: 3.5rem;
     font-family: 'Bebas Neue', cursive
 }
-
 .carousel-caption p {
     font-size: 1.1rem;
+    font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 }
-
 /******************************/
-
-
 
 /** Seccion valores */
 .container-valores .row {
     display: flex;
     justify-content: space-evenly;
 }
-
 .container-valores .items {
-    background: rgba(217, 217, 98, 0.127);
+    /* background: rgba(217, 217, 98, 0.127); */
+    background: #008cbd;
+
     border: transparent;
     padding: 15px;
     margin: 8px;
     transition: all 0.2s ease-in;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-
 .items:hover {
     /* background: #d7dcdb; */
     background: rgba(72, 207, 231, 0.663);
@@ -105,7 +105,6 @@ header {
     color: rgb(51, 51, 51);
     transform: scale(1.1);
 }
-
 /**************************/
 
 /**Servicios 2 */
@@ -113,16 +112,13 @@ header {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     /* background: rgba(217, 217, 98, 0.127); */
     background: #008cbd;
-
     width: 90%;
     margin: 0 auto;
 }
-
 .container-miduv {
     display: flex;
     height: 400px;
 }
-
 .container-card {
     width: 0;
     flex-grow: 1;
@@ -132,42 +128,36 @@ header {
     margin: 0 8px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
 .container-card .card-1 {
     background-image: url(img-figma/carga1.jpeg);
     background-position: center;
     background-size: cover;
     height: 400px;
 }
-
 .container-card .card-2 {
     background-image: url(img-figma/carga1.jpeg);
     background-position: center;
     background-size: cover;
     height: 400px;
 }
-
 .container-card .card-3 {
     background-image: url(img-figma/carga1.jpeg);
     background-position: center;
     background-size: cover;
     height: 400px;
 }
-
 .container-card .card-4 {
     background-image: url(img-figma/carga1.jpeg);
     background-position: center;
     background-size: cover;
     height: 400px;
 }
-
 .container-card .card-5 {
-    background-image: url(img-figma/carga1.jpeg);
-    background-position: center;
+    background-image: url(img-figma/img-6.jpeg);
+    background-position: 40%;
     background-size: cover;
     height: 400px;
 }
-
 .container-card:hover {
     height: 100%;
     width: 250px;
@@ -178,13 +168,11 @@ header {
     transform: scale(1.1);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
 .card h4 {
     text-align: center;
     color: white;
     padding-top: 50%;
 }
-
 /***********************************/
 
 /** Seccion galeria */
@@ -198,7 +186,6 @@ header {
     margin: 0 auto;
     text-align: center;
 }
-
 .grid-item {
     display: flex;
     align-items: center;
@@ -208,12 +195,10 @@ header {
     transition: transform 0.3s ease-in-out;
     /* border: solid 1px; */
 }
-
 .grid-item:hover {
     filter: opacity(0.9);
     transform: scale(1.04);
 }
-
 .grid-galeria {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -222,12 +207,10 @@ header {
     padding: 20px;
     grid-auto-flow: dense;
 }
-
 .grid-galeria img {
     width: 100%;
     height: 100%;
 }
-
 @media (min-width:600px) {
     .wide {
         grid-column: span 2;
@@ -237,18 +220,18 @@ header {
         grid-row: span 2;
     }
 }
-
 .btn-verMas {
     background-color: #eee;
     border: none;
-    padding: .8rem;
+    padding: .2rem;
     font-size: 1rem;
+    font-weight: bold;
     width: 8em;
     border-radius: .5rem;
     color: rgb(23, 48, 208);
     box-shadow: 0 0.4rem #d9dadf;
     cursor: pointer;
-    margin: 40px;
+    margin: 20px;
 }
 
 .btn-verMas:active {
@@ -256,72 +239,62 @@ header {
     box-shadow: 0 0.2rem #dbd9df;
     transform: translateY(0.2rem);
 }
-
 .btn-verMas:hover:not(:disabled) {
     background: rgb(32, 217, 237);
     color: white;
     text-shadow: 0 0.1rem #0801e6;
 }
-
 .btn-verMas:disabled {
     cursor: auto;
     color: grey;
 }
-
 /***********************************/
 
 /********** seccion pagos **********/
 .seccion-pagos {
-    align-items: center;
+    /* align-items: center; */
     display: flex;
-    height: 500px;
     background-image: url(fondos/hombre-negocios-mensajes-texto-aplicacion-telefono-movil-azul.jpg);
     background-size: cover;
     background-position: center;
     margin: 40px auto;
-    padding: 30px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-
 .container-pagos {
-    margin: 0 auto;
+    margin: 15px auto;
     text-align: center;
+    width: 90%;
 }
-
 .icono-pagos img {
     max-height: 300px;
 }
-
-.container-pagos {
-    padding: 40px 0;
-    width: 70%;
-}
-
 .icono-contacto {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 40px;
-    background: rgba(11, 202, 180, 0.427);
-    border-radius: 1em;
-}
+    background: rgba(255, 255, 255, 0.313);
 
+    border-radius: 1em;
+    margin: 15px auto;
+}
+.icono-contacto h5, a{
+    font-weight: bold;
+}
 .icono-contacto img {
     margin: 10px 0;
     width: 40px;
     height: 40px;
     margin-right: .5rem;
 }
-
 .enlace-pagos {
     margin: 10px 0;
     text-decoration: none;
     font-size: 1.2em;
     transition: all .2s ease-in-out;
 }
-
 .enlace-pagos:hover {
     transform: scale(1.1);
 }
@@ -332,32 +305,27 @@ header {
 /*****seccion ubicacion */
 .seccion-ubicacion {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-    background: rgba(217, 217, 98, 0.127);
     /* background: rgb(17, 220, 213); */
     padding: 20px;
     background: #008cbd;
 
 }
-
 .container-mapa iframe {
-    background: rgba(153, 153, 149, 0.127);
+    background: rgba(255, 255, 255, 0.313);
     border-radius: 15px;
     padding: 15px;
     transition: all 0.2s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    align-items: end;
 
 }
-
 .container-mapa iframe:hover {
     transform: scale(1.2);
 }
-
 .container-mapa h6 {
     /* background: rgb(119, 20, 190); */
-    height: 65px;
-    padding: 70px 0;
+    margin-top: 40px;
 }
-
 /************************************/
 
 
@@ -365,11 +333,8 @@ header {
 .colaboradores {
     padding: 40px 0;
     background: #008cbd;
-
     /* background: rgba(217, 217, 98, 0.127); */
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-
-    /* background-color: #656060; */
 }
 
 .colaboradores img {
@@ -551,10 +516,13 @@ header {
 
 .container-iconos a {
     text-align: center;
-    padding: 5px 0;
+    padding: 5px;
+    margin: 0;
     text-decoration: none;
     color: rgba(108, 108, 108, 0.741);
     transition: all 0.1s ease-in-out;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 .container-iconos a:hover {
