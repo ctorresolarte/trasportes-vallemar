@@ -33,13 +33,15 @@
     <!--? Linking the bootstrap icons to the HTML file. -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
-
+    <!--? link de las fuentes e iconos para el calendario -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <!--? link de animar.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -52,26 +54,28 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbar-toggler">
-                    <a class="navbar-brand" href="#" alt="#">
+                    <a class="navbar-brand" href="#" alt="logo-vallemar">
                         <img src="img-figma/logo-vallemar.png" alt="">
                     </a>
+
                     <ul class="navbar-nav d-flex justify-content-center align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link" href="#">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#servicios">Servicios</a>
+                            <a class="nav-link" href="#servicios">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#pagos">Pagos</a>
+                            <a class="nav-link" href="#pagos">Pagos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#colaboradores">Asesores</a>
+                            <a class="nav-link" href="#colaboradores">Asesores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#contacto">Contactanos</a>
+                            <a class="nav-link" href="#contacto">Contactanos</a>
                         </li>
                     </ul>
+
                 </div>
             </div>
         </nav>
@@ -161,8 +165,8 @@
             <div class="container-valores">
                 <div class="row">
                     <div class="items col-12 col-md-4">
-                        <img src="iconos/mision.png" width="80" alt="">
-                        <h4 class="text-center letra-titulos">Mision</h4>
+                        <img src="iconos/mision.png" width="80" alt="" class="animate__animated animate__backInDown">
+                        <h4 class="text-center letra-titulos ">Misión</h4>
                         <p class="letra-textos mt-3 text-center">
                             Nos esforzaremos al maximo por entender y satisfacer sus
                             necesidades, proporcionando soluciones personalizadas y garantizando una entrega segura y
@@ -171,8 +175,8 @@
                     </div>
 
                     <div class="items col-12 col-md-4">
-                        <img src="iconos/vision.png" width="80" alt="">
-                        <h4 class="text-center letra-titulos">Vision</h4>
+                        <img src="iconos/vision.png" width="80" alt="" class="animate__animated animate__backInDown">
+                        <h4 class="text-center letra-titulos ">Visión</h4>
                         <p class="letra-textos mt-3 text-center">
                             ser líderes en la industria, ofreciendo un servicio confiable y eficiente a nuestros
                             clientes. Buscaremos constantemente mejorar y optimizar nuestros procesos para garantizar la
@@ -181,8 +185,8 @@
                     </div>
 
                     <div class="items col-12 col-md-4">
-                        <img src="iconos/valores.png" width="80" alt="">
-                        <h4 class="text-center letra-titulos">Valores</h4>
+                        <img src="iconos/valores.png" width="80" alt="" class="animate__animated animate__backInDown">
+                        <h4 class="text-center letra-titulos ">Valores</h4>
                         <ul class="letra-textos letra-textos mt-3">
                             <li>Compromiso</li>
                             <li>Calidad de servicio</li>
@@ -211,7 +215,8 @@
             <div class="container-servicios">
                 <div class="row">
                     <div class="card col-12 col-md-6 col-lg-4">
-                        <img src="img-figma/transporte-masivo.jpeg" class="card-img-top " alt="...">
+                        <img src="img-figma/transporte-masivo.jpeg"
+                            class="card-img-top animate__animated animate__backInLeft" alt="...">
                         <div class="card-body">
                             <h5 class="card-title letra-titulos text-center">TRANSPORTE MASIVO Y SEMICONSOLIDADO
                             </h5>
@@ -227,7 +232,8 @@
                     </div>
 
                     <div class="card col-12 col-md-6 col-lg-4">
-                        <img src="img-figma/transporte urbano.jpeg" class="card-img-top" alt="...">
+                        <img src="img-figma/transporte urbano.jpeg"
+                            class="card-img-top animate__animated animate__backInUp" alt="...">
                         <div class="card-body">
                             <h5 class="card-title letra-titulos text-center">TRANSPORTE ESPECIALIZADO URBANOS Y
                                 MULTIENTREGA
@@ -245,7 +251,8 @@
                     </div>
 
                     <div class="card col-12 col-md-12 col-lg-4">
-                        <img src="img-figma/camion-puerto.jpg" class="card-img-top" alt="...">
+                        <img src="img-figma/camion-puerto.jpg"
+                            class="card-img-top animate__animated animate__backInRight" alt="...">
                         <div class="card-body">
                             <h5 class="card-title letra-titulos text-center">TRANSPORTE CONTENEDORES Y LCL DE IMPO Y
                                 EXPO
@@ -298,7 +305,6 @@
             <div class="container-OET">
                 <div class="row">
                     <h3 class="titulos text-light">Contamos con el respaldo del grupo OET</h3>
-
                     <div class="col-12 col-md-6">
                         <p class="letra-textos texto-oet ">
                             En Grupo OET brindamos para nuestros clientes de la industria logística y de transporte,
@@ -306,7 +312,8 @@
                             operaciones, monitorear en tiempo real y tener información actualizada del sector,
                             garantizandoles una toma de decisiones acertada y un crecimiento con rentabilidad en su
                             mercado.<br>Para mas informacion da click en este enlace.
-                            <a href="https://www.grupooet.com/" target="_blank" style="text-decoration: none">
+                            <a href="https://www.grupooet.com/" rel="noreferrer noopener target=" _blank"
+                                style="text-decoration: none">
                                 www.grupooet.com</a>
                         </p>
                     </div>
@@ -315,6 +322,58 @@
                             src="https://www.youtube.com/embed/dP9mxz3vwqo" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-rit  mt-5">
+                <div class="row mt-5">
+                    <h3 class="titulos text-light  p-3">Para brindar una mayor confiabilidad y seguridad a nuestros
+                        clientes, utilizamos herramientas como el RIT y RNDC. </h3>
+                    <div class="col-12 col-md-6">
+                        <div class="card ">
+                            <img src="iconos/RIT-logo.png" class="card-img-top mt-3" alt="logo-rit">
+                            <div class="card-body">
+                                <h5 class="card-title letra-titulos titulos">¿Qué es la RIT?
+                                </h5>
+                                <p class="card-text letra-textos">RIT (Red de Información del Transporte) Es la
+                                    aplicación en
+                                    Internet que permite verificar la información de
+                                    vehículos, personas, vías, términos de seguridad, etc., en cuanto al transporte de
+                                    carga.
+                                    RIT adicionalmente permite controlar el saber si un vehículo y conductor tiene algún
+                                    tipo de eventos, si se
+                                    encuentran reportados en nuestra base de datos
+                                </p>
+                                <a href="https://oet.intrared.net/ap/rit/session.php" rel="noopener noreferrer"
+                                    class="btn btn-primary letra-textos" target="_blank">Registrate</a>
+                                <a href="Manual_RIT.pdf" rel="noopener noreferrer"
+                                    class="btn btn-primary m-3 letra-textos" target="_blank">Manual
+                                    RTI</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <img src="img-figma/Registro-Nacional-de-Despachos-de-Carga.jpg" class="card-img-top mt-3"
+                                alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title letra-titulos">¿Que es RNDC?</h5>
+                                <p class="card-text letra-textos">
+                                    El Registro Nacional de Despacho de Carga (en adelante, RNDC) es un
+                                    sistema de
+                                    información que permite recibir, validar y transmitir la información generada en las
+                                    operaciones del Servicio Público de Transporte de Carga por Carretera.
+                                </p>
+                                <a href="https://rndc.mintransporte.gov.co/MenuPrincipal/tabid/204/language/es-MX/Default.aspx?returnurl=%2f"
+                                    class="btn btn-primary letra-textos" rel="noopener noreferrer"
+                                    target="_blank">Consultar RNDC</a>
+                                <a href="MANUAL RNDC USUARIO Web V2.0.pdf" class="btn btn-primary letra-textos mt-3 m-3"
+                                    rel="noopener noreferrer" target="_blank">Manual de
+                                    usuario</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -342,10 +401,79 @@
                             en el rastreo de su mercancía. Estas herramientas permiten mantener un seguimiento constante
                             de
                             la mercancía transportada, y gracias a ellas nuestra empresa puede
-                            garantizar la seguridad y la integridad tanto de los conductores como de su carga..</p>
+                            garantizar la seguridad y la integridad tanto de los conductores como de su carga.<br><br></p>
                     </div>
                 </div>
             </div>
+            <!--? Seccion Slider-socios comerciales -->
+            <section>
+                <h2 class="titulos text-center animate__animated animate__jello">Socios comerciales</h2>
+                <div class="container-slider-2">
+                    <div class="slide-track-2">
+                        <div class="slider">
+                            <img src="iconos/sc1.png" alt="">
+                        </div>
+                        <div class="slider">
+                            <img src="iconos/sc2.png" alt="">
+                        </div>
+                        <div class="slider">
+                            <img src="iconos/sc3.jpg" alt="">
+                        </div>
+                        <div class="slider">
+                            <img src="iconos/sc4.png" alt="">
+                        </div>
+                        <div class="slider">
+                            <img src="iconos/sc5.jpg" alt="">
+                        </div>
+                        <div class="slider">
+                            <img src="iconos/sc6.png" alt="">
+                        </div>
+                        <div class="slider">
+                            <img src="iconos/sc7.jpg" alt="">
+                        </div>
+                        <div class="slider">
+                            <img src="iconos/sc8.png" alt="">
+                        </div>
+                        <div class="slider">
+                            <img src="iconos/sc9.png" alt="">
+                        </div>
+
+                        <div class="slider">
+                            <img src="iconos/sc1.png" alt="">
+                        </div>
+                        <div class="slider">
+                            <img src="iconos/sc2.png" alt="">
+                        </div>
+                        <div class="slider">
+                            <img src="iconos/sc3.jpg" alt="">
+                        </div>
+                        <div class="slider">
+                            <img src="iconos/sc4.png" alt="">
+                        </div>
+                        <div class="slider">
+                            <img src="iconos/sc5.jpg" alt="">
+                        </div>
+                        <div class="slider">
+                            <img src="iconos/sc6.png" alt="">
+                        </div>
+                        <div class="slider">
+                            <img src="iconos/sc7.jpg" alt="">
+                        </div>
+                        <div class="slider">
+                            <img src="iconos/sc8.png" alt="">
+                        </div>
+                        <div class="slider">
+                            <img src="iconos/sc9.png" alt="">
+                        </div>
+                        <div class="slider">
+                            <img src="iconos/sc8.png" alt="">
+                        </div>
+                        <div class="slider">
+                            <img src="iconos/sc9.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
         </section>
 
         <!--? Seccion Galeria -->
@@ -361,9 +489,10 @@
                 <img src="img-figma/img-5.jpg" alt="" class="grid-item">
 
             </div>
-            <a class="ver-mas" href="galeria.html" target="_blank">
-                <button class="btn-verMas"> Ver mas </button>
-            </a>
+
+            <a href="galeria.html" target="_blank" class="btn btn-primary letra-textos">Ver mas</a>
+
+
         </section>
 
         <!--? Seccion pagos -->
